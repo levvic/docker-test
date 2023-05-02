@@ -6,7 +6,7 @@ COPY packages/package*.json ./
 
 RUN npm i --omit=dev
 
-COPY src/* .
+COPY src/* ./
 
 EXPOSE 3032
 ENTRYPOINT [ "node","main.js" ]
